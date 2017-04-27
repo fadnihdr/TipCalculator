@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:columnCount="2"
+    android:rowCount="4"
+    tools:context="com.example.fadni.tipcalculator.MainActivity">
+
+    <TextView
+        android:id="@+id/costText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_gravity="center_vertical|center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_rowWeight="1"
+        android:background="@android:color/holo_blue_bright"
+        android:elevation="5dp"
+        android:gravity="end"
+        android:text="@string/cost"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inputText"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_columnWeight="1"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_rowWeight="1"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/percentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_rowWeight="1"
+        android:text="10%"
+        android:textSize="20dp" />
+
+    <SeekBar
+        android:id="@+id/percentBar"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_rowWeight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_rowWeight="1"
+        android:text="Tip"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/totalCut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_rowWeight="1"
+        android:background="@android:color/holo_blue_bright"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:text="$10"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_rowWeight="1"
+        android:text="Total"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/totalCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_rowWeight="1"
+        android:background="@android:color/holo_blue_bright"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:text="$110"
+        android:textSize="20dp" />
+
+</GridLayout>
